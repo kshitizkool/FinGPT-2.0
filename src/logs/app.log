@@ -1,0 +1,141 @@
+2025-09-28 21:33:48,999 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-28 21:34:45,339 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-28 21:40:21,359 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-28 22:24:46,002 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-28 22:25:08,310 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-28 22:26:06,991 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-28 22:30:57,914 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-28 22:31:40,412 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-28 22:35:28,556 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-28 22:37:38,637 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-28 22:46:05,891 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-28 22:52:11,866 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-28 22:53:58,974 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-28 22:56:37,089 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-28 22:56:37,091 - openai._base_client - INFO - Retrying request to /chat/completions in 0.398143 seconds
+2025-09-28 22:56:38,207 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-28 23:05:09,486 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-28 23:19:11,518 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-28 23:19:46,231 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-28 23:37:05,278 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-28 23:37:05,279 - openai._base_client - INFO - Retrying request to /chat/completions in 0.436443 seconds
+2025-09-28 23:37:06,301 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-28 23:37:06,302 - openai._base_client - INFO - Retrying request to /chat/completions in 0.862017 seconds
+2025-09-28 23:37:08,042 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-29 00:13:09,390 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-29 00:14:24,753 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-29 00:16:00,508 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-29 00:56:06,728 - stock_analysis - ERROR - Error in deep research mode: 'stock_symbols'
+2025-09-30 18:38:48,256 - stock_analysis - ERROR - Error processing query: There are multiple `button` elements with the same auto-generated ID. When this element is created, it is assigned an internal ID based on the element type and provided parameters. Multiple elements with the same type and parameters will cause this error.
+
+To fix this error, please pass a unique `key` argument to the `button` element.
+2025-10-03 00:30:02,828 - stock_analysis - ERROR - Error processing query: Can't instantiate abstract class BaseAgent with abstract method process
+2025-10-03 00:42:53,201 - stock_analysis - ERROR - Error processing query: OpenRouter API key not found. Please set the OPENROUTER_API_KEY environment variable in your .env file.
+2025-10-03 00:46:33,954 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 00:46:49,093 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 00:48:28,083 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 00:49:52,052 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 00:51:26,899 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 00:53:32,751 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 00:54:33,350 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 00:55:07,021 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 00:56:23,554 - stock_analysis - ERROR - Error processing query: No module named 'component'
+2025-10-03 01:05:17,852 - stock_analysis - ERROR - Error processing query: create_stock_analysis_graph() takes 0 positional arguments but 1 was given
+2025-10-03 01:05:35,207 - stock_analysis - ERROR - Error processing query: create_stock_analysis_graph() takes 0 positional arguments but 1 was given
+2025-10-03 01:12:28,377 - stock_analysis - ERROR - Error processing query: OpenRouter API key not found. Please set the OPENROUTER_API_KEY environment variable in your .env file.
+2025-10-03 01:15:20,270 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:15:34,577 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:16:01,061 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:16:58,027 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:18:48,764 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:19:31,624 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:20:42,606 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:21:16,413 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:21:56,796 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:25:18,473 - stock_analysis - ERROR - Error processing query: create_stock_analysis_graph() takes 0 positional arguments but 1 was given
+2025-10-03 01:33:15,535 - stock_analysis - ERROR - Error in deep research mode: 'DiGraph' object has no attribute 'invoke'
+2025-10-03 01:39:11,172 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:39:22,866 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:41:03,334 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:41:22,169 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:42:10,873 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:42:59,231 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:44:08,224 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:44:51,181 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:45:55,828 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:46:40,161 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:46:59,348 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:47:31,006 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 01:48:35,207 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 01:48:35,207 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 01:51:38,133 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 01:51:38,133 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 01:55:59,040 - src.agents.base_agent - INFO - Agent router_agent: query_routed
+2025-10-03 01:55:59,042 - src.agents.planning_agent - WARNING - Could not generate clarifying questions: "'objective'"
+2025-10-03 01:55:59,042 - src.agents.base_agent - INFO - Agent planning_agent: research_plan_created
+2025-10-03 01:56:09,893 - yfinance - ERROR - $TCS.NS: possibly delisted; no price data found  (period=5y)
+2025-10-03 01:57:00,670 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 01:57:00,670 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 01:57:04,697 - src.agents.base_agent - INFO - Agent data_collection_agent: data_collected
+2025-10-03 01:57:04,703 - src.agents.base_agent - INFO - Agent analysis_agent: metrics_calculated
+2025-10-03 01:57:04,704 - src.agents.base_agent - INFO - Agent validation_agent: data_validated
+2025-10-03 01:57:04,707 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 01:57:04,707 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 01:57:08,000 - src.agents.base_agent - INFO - Agent report_agent: report_generated
+2025-10-03 02:07:47,174 - src.agents.base_agent - INFO - Agent router_agent: query_routed
+2025-10-03 02:07:47,176 - src.agents.planning_agent - WARNING - Could not generate clarifying questions: "'objective'"
+2025-10-03 02:07:47,176 - src.agents.base_agent - INFO - Agent planning_agent: research_plan_created
+2025-10-03 02:08:10,997 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 02:08:10,997 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 02:08:14,637 - src.agents.base_agent - INFO - Agent data_collection_agent: data_collected
+2025-10-03 02:08:14,640 - src.agents.base_agent - INFO - Agent analysis_agent: metrics_calculated
+2025-10-03 02:08:14,643 - src.agents.base_agent - INFO - Agent validation_agent: data_validated
+2025-10-03 02:08:14,656 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 02:08:14,657 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 02:08:18,396 - src.agents.base_agent - INFO - Agent report_agent: report_generated
+2025-10-03 02:25:22,042 - src.agents.base_agent - INFO - Agent router_agent: query_routed
+2025-10-03 02:25:22,044 - src.agents.planning_agent - WARNING - Could not generate clarifying questions: "'objective'"
+2025-10-03 02:25:22,044 - src.agents.base_agent - INFO - Agent planning_agent: research_plan_created
+2025-10-03 02:25:30,752 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 02:25:30,752 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 02:25:36,610 - src.agents.base_agent - INFO - Agent data_collection_agent: data_collected
+2025-10-03 02:25:36,614 - src.agents.base_agent - INFO - Agent analysis_agent: metrics_calculated
+2025-10-03 02:25:36,615 - src.agents.base_agent - INFO - Agent validation_agent: data_validated
+2025-10-03 02:25:36,629 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 02:25:36,629 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 02:25:41,290 - src.agents.base_agent - INFO - Agent report_agent: report_generated
+2025-10-03 02:28:20,001 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 02:34:09,715 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 02:35:42,542 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 02:37:20,817 - src.agents.base_agent - INFO - Agent router_agent: query_routed
+2025-10-03 02:37:20,819 - src.agents.planning_agent - WARNING - Could not generate clarifying questions: "'objective'"
+2025-10-03 02:37:20,820 - src.agents.base_agent - INFO - Agent planning_agent: research_plan_created
+2025-10-03 02:37:30,088 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 02:37:30,089 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 02:37:34,065 - src.agents.base_agent - INFO - Agent data_collection_agent: data_collected
+2025-10-03 02:37:34,078 - src.agents.base_agent - INFO - Agent analysis_agent: metrics_calculated
+2025-10-03 02:37:34,080 - src.agents.base_agent - INFO - Agent validation_agent: data_validated
+2025-10-03 02:37:34,106 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 02:37:34,106 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 02:37:37,847 - src.agents.base_agent - INFO - Agent report_agent: report_generated
+2025-10-03 02:49:00,727 - src.agents.base_agent - INFO - Agent router_agent: query_routed
+2025-10-03 02:49:00,730 - src.agents.planning_agent - WARNING - Could not generate clarifying questions: "'objective'"
+2025-10-03 02:49:00,730 - src.agents.base_agent - INFO - Agent planning_agent: research_plan_created
+2025-10-03 02:49:06,314 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 02:49:06,314 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 02:49:10,022 - src.agents.base_agent - INFO - Agent data_collection_agent: data_collected
+2025-10-03 02:49:10,053 - src.agents.base_agent - INFO - Agent analysis_agent: metrics_calculated
+2025-10-03 02:49:10,054 - src.agents.base_agent - INFO - Agent validation_agent: data_validated
+2025-10-03 02:49:10,098 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 02:49:10,098 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 02:49:13,399 - src.agents.base_agent - INFO - Agent report_agent: report_generated
+2025-10-03 03:11:04,498 - src.agents.planning_agent - WARNING - Could not generate clarifying questions: "'objective'"
+2025-10-03 03:11:04,498 - src.agents.base_agent - INFO - Agent planning_agent: research_plan_created
+2025-10-03 03:11:11,841 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 03:11:11,841 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 03:11:15,563 - src.agents.base_agent - INFO - Agent data_collection_agent: data_collected
+2025-10-03 03:11:15,569 - src.agents.base_agent - INFO - Agent analysis_agent: metrics_calculated
+2025-10-03 03:11:15,573 - src.agents.base_agent - INFO - Agent validation_agent: data_validated
+2025-10-03 03:11:15,628 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 03:11:15,628 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-03 03:11:20,660 - src.agents.base_agent - INFO - Agent report_agent: report_generated

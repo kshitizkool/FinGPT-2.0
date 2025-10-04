@@ -1,0 +1,197 @@
+# Agentic AI Stock Analysis System Configuration
+# Main system configuration
+system:
+  name: "StockAnalysisAgent"
+  version: "1.0.0"
+  description: "AI-powered stock analysis system for IT and Pharma sectors"
+
+llm:
+  provider: "openrouter"
+  model: "x-ai/grok-4-fast:free"
+  api_key: "${OPENROUTER_API_KEY}"
+  temperature: 0.7
+  max_tokens: 10000
+  timeout: 60
+sectors:
+  allowed_sectors:
+    - name: "Information Technology"
+      code: "IT"
+      keywords: ["software", "hardware", "cloud", "AI", "tech", "IT", "SaaS", "TCS","INFY","HCLTECH","WIPRO","LTIM","TECHM","PERSISTENT","OFSS","COFORGE","MPHASIS"]
+      stocks:
+        - "TCS.NS"
+        - "INFY.NS"
+        - "HCLTECH.NS"
+        - "WIPRO.NS"
+        - "LTIM.NS"
+        - "TECHM.NS"
+        - "PERSISTENT.NS"
+        - "OFSS.NS"
+        - "COFORGE.NS"
+        - "MPHASIS.NS"
+    - name: "Pharmaceuticals"
+      code: "PHARMA"
+      keywords: ["pharma", "biotech", "drug", "medicine", "healthcare"]
+      stocks:
+        - "SUNPHARMA.NS"
+        - "DRREDDY.NS"
+        - "CIPLA.NS"
+        - "DIVISLAB.NS"
+        - "TORNTPHARM.NS"
+        - "ZYDUSLIFE.NS"
+        - "ALKEM.NS"
+        - "AUROPHARMA.NS"
+        - "LUPIN.NS"
+        - "BIOCON.NS"
+
+    - name: "Pharmaceuticals"
+      code: "PHARMA"
+      keywords: ["pharma", "biotech", "drug", "medicine", "healthcare","SUNPHARMA","DRREDDY","CIPLA","DIVISLAB","TORNTPHARM","ZYDUSLIFE","ALKEM","AUROPHARMA","LUPIN","BIOCON"]
+      stocks:
+      - "SUNPHARMA.NS"
+      - "DRREDDY.NS"
+      - "CIPLA.NS"
+      - "DIVISLAB.NS"
+      - "TORNTPHARM.NS"
+      - "ZYDUSLIFE.NS"
+      - "ALKEM.NS"
+      - "AUROPHARMA.NS"
+      - "LUPIN.NS"
+      - "BIOCON.NS"
+
+# Agent Configuration
+agents:
+  router_agent:
+    name: "RouterAgent"
+    description: "Routes queries to appropriate agents and enforces sector guardrails"
+    system_prompt: |
+      You are a routing agent for a stock analysis system. You ONLY handle queries 
+      related to IT and Pharmaceutical sector stocks. If a user asks about any other 
+      sector or topic, politely decline and redirect them to ask about IT or Pharma stocks.
+
+  planning_agent:
+    name: "PlanningAgent"
+    description: "Creates research plans and asks clarifying questions"
+    tools: ["create_research_plan", "ask_clarifying_questions"]
+    system_prompt: |
+      You are a financial research planning agent. Create comprehensive research plans
+      for stock analysis and ask clarifying questions when needed.
+
+  data_collection_agent:
+    name: "DataCollectionAgent"
+    description: "Collects stock data and financial reports"
+    tools: ["yahoo_finance_api", "pdf_processor", "web_search"]
+    system_prompt: |
+      You are a data collection specialist. Gather stock data, financial reports,
+      and relevant market information for analysis.
+
+  analysis_agent:
+    name: "AnalysisAgent"
+    description: "Performs financial calculations and analysis"
+    tools: ["calculate_cagr", "calculate_sharpe_ratio", "technical_analysis"]
+    system_prompt: |
+      You are a quantitative analyst. Perform detailed financial calculations
+      including CAGR, Sharpe ratio, volatility, and other key metrics.
+
+  validation_agent:
+    name: "ValidationAgent"
+    description: "Validates analysis results and reasoning"
+    tools: ["data_validation", "cross_reference"]
+    system_prompt: |
+      You are a validation specialist. Verify the accuracy of data and analysis
+      results, flag any inconsistencies or errors.
+
+  report_generation_agent:
+    name: "ReportAgent"
+    description: "Generates structured final reports"
+    tools: ["format_report", "create_pdf", "create_txt"]
+    system_prompt: |
+      You are a report generation specialist. Create well-formatted, comprehensive
+      reports with charts, tables, and key insights.
+
+# Database Configuration
+database:
+  stock_db:
+    type: "sqlite"  # or "postgresql" for production
+    path: "./data/stocks.db"
+    tables:
+      stocks: "CREATE TABLE IF NOT EXISTS stocks (symbol TEXT, date DATE, open REAL, high REAL, low REAL, close REAL, volume INTEGER, sector TEXT)"
+      metrics: "CREATE TABLE IF NOT EXISTS metrics (symbol TEXT, date DATE, cagr REAL, sharpe_ratio REAL, volatility REAL)"
+
+  vector_db:
+    type: "chromadb"
+    persist_directory: "./data/chroma_db"
+    collection_name: "financial_reports"
+    embedding_model: "sentence-transformers/all-mpnet-base-v2"
+
+# RAG Configuration
+rag:
+  pdf_processing:
+    chunk_size: 1000
+    chunk_overlap: 200
+    separators: ["\n\n", "\n", " ", ""]
+
+  retrieval:
+    similarity_threshold: 0.7
+    max_documents: 5
+    rerank_top_k: 3
+
+# Stock Analysis Configuration
+analysis:
+  metrics:
+    risk_free_rate: 0.03  # 3% risk-free rate
+    trading_days_per_year: 252
+
+  calculations:
+    cagr:
+      description: "Compound Annual Growth Rate"
+      formula: "(End Value / Beginning Value)^(1/years) - 1"
+
+    sharpe_ratio:
+      description: "Risk-adjusted return measure"
+      formula: "(Portfolio Return - Risk Free Rate) / Standard Deviation"
+
+    volatility:
+      description: "Standard deviation of returns"
+      period: "annual"
+
+    beta:
+      description: "Stock sensitivity to market movements"
+      benchmark: "^GSPC"  # S&P 500
+
+# UI Configuration
+streamlit:
+  page_title: "AI Stock Analysis System"
+  page_icon: "📈"
+  layout: "wide"
+  initial_sidebar_state: "expanded"
+
+  modes:
+    basic:
+      name: "Basic Analysis"
+      description: "Quick analysis using single LLM"
+
+    deep_research:
+      name: "Deep Research"
+      description: "Comprehensive multi-agent analysis"
+
+# Monitoring and Observability
+observability:
+  langsmith:
+    enabled: true
+    project_name: "stock-analysis-agents"
+    api_key: "${LANGSMITH_API_KEY}"
+
+  logging:
+    level: "INFO"
+    file: "./logs/system.log"
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Security and Rate Limiting
+security:
+  rate_limit:
+    requests_per_minute: 100
+    requests_per_hour: 1000
+
+  api_keys:
+    required: ["OPENROUTER_API_KEY", "LANGSMITH_API_KEY"]
+    optional: ["YAHOO_FINANCE_API_KEY"]
